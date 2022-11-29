@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 1;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #ddd;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+#container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+#header {
+  background: #86b604;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#nav #hamburger-button {
+  display: none;
+}
+
+#nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#hamburger {
+  width: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  padding: 10px;
+  display: block;
+  float: right;
+  margin: 7px 7px 0 0;
+}
+
+#hamburger span {
+  background: white;
+  height: 5px;
+  margin-bottom: 5px;
+  display: block;
+  border-radius: 3px;
+}
+
+#hamburger span:last-child {
+  margin-bottom: 0;
+}
+
+#nav ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#nav ul li:first-child {
+  padding: 1.5rem 1rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem 1rem;
+  display: inline-block;
+}
+
+#nav ul li:not(:first-child) {
+  display: none;
+}
+
+#hamburger-button:checked ~ ul li:not(:first-child) {
+  display: block;
+}
+
+#main h1 {
+  font-weight: 100;
+  font-size: 5rem;
+  margin: 5rem 0 2rem 0;
+}
+
+#main > img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#main > p {
+  line-height: 1.7;
+}
+
+#main > h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 3rem 0 2rem 0;
+}
+
+#main .box {
+  background: white;
+  margin-bottom: 1rem;
+}
+
+#main .box .box-content {
+  padding: 0.6rem;
+}
+
+.box-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.box-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.box-content a {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #86b604;
+}
+
+@media (min-width: 768px) {
+  #main > img {
+    float: right;
+    width: 40%;
+  }
+
+  #main::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 30;
+  bottom: 0;
+  padding: 5px;
+  width: 65.87%;
+  background-color: goldenrod;
+  color: white;
+  text-align: center;
+}
